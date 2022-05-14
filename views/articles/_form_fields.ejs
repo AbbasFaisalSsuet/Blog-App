@@ -1,0 +1,23 @@
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    background-color: rgba(216, 216, 216, 0.835);
+  }
+</style>
+<div class="form-group" style="font-family: cursive;">
+  <label for="title">Title</label>
+  <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group" style="font-family: cursive;">
+  <label for="description">Description</label>
+  <textarea required name="description" id="description" class="form-control"><%= article.description %></textarea>
+</div>
+<div class="form-group" style="font-family: cursive;">
+  <label for="markdown">Markdown</label>
+  <textarea required name="markdown" id="markdown" class="form-control"><%= article.markdown %></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
